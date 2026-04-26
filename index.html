@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sakshi Portfolio</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<script src="https://unpkg.com/scrollreveal"></script><style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Poppins',sans-serif;background:linear-gradient(120deg,#fdfbfb,#ebedee);color:#0e2431;scroll-behavior:smooth;transition:0.3s;}
+.dark{background:#0e2431;color:#fff;}
+
+header{position:fixed;width:100%;background:rgba(255,255,255,0.7);backdrop-filter:blur(10px);padding:15px 30px;display:flex;justify-content:space-between;z-index:100;}
+.dark header{background:rgba(0,0,0,0.7);} 
+
+nav a{margin-left:20px;text-decoration:none;color:#0e2431;font-weight:600;}
+.dark nav a{color:#fff;}
+
+section{padding:100px 20px;text-align:center;}
+
+.home{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;}
+.home h1 span{background:linear-gradient(45deg,#4facfe,#00f2fe);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+
+.button{margin-top:20px;padding:10px 20px;border-radius:20px;background:linear-gradient(45deg,#4facfe,#00f2fe);color:#fff;text-decoration:none;display:inline-block;}
+
+.container{display:flex;flex-wrap:wrap;justify-content:center;}
+.card{margin:15px;padding:20px;max-width:300px;background:white;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,0.1);transition:0.3s;}
+.dark .card{background:#1c1c1c;}
+.card:hover{transform:translateY(-10px);} 
+
+.about img{width:200px;border-radius:10px;margin-bottom:20px;}
+.toggle{cursor:pointer;font-size:20px;}
+
+footer{background:#0e2431;color:white;padding:20px;text-align:center;}
+</style></head><body><header>
+<h3>Sakshi</h3>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#work">Work</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+<span class="toggle" onclick="toggleDark()">🌙</span>
+</nav>
+</header><!-- HOME --><section class="home" id="home">
+<img src="profile.jpg" alt="Profile Photo" style="width:180px;border-radius:50%;margin-bottom:20px;box-shadow:0 4px 20px rgba(0,0,0,0.2);">
+<h1>Hi, I'm <span>Sakshi</span></h1>
+<p>Computer Engineering Student</p>
+</section><!-- ABOUT --><section id="about" class="about">
+<h2>About Me</h2>
+<img src="profile.jpg" alt="Profile Photo">
+<p>
+I am a Computer Engineering student passionate about technology and development.
+I am also a public speaker and a creative writer who expresses thoughts through poems and shayari.
+</p><div class="container">
+<div class="card"><b>Personal Information</b><br>Name: Sakshi Khalage<br>Location: Pune, India</div>
+<div class="card"><b>Values</b><br>Creativity, honesty, communication, growth mindset</div>
+<div class="card"><b>Goals</b><br>To become a skilled developer and confident communicator</div>
+<div class="card"><b>History</b><br>Started journey in Computer Engineering with passion for tech</div>
+<div class="card"><b>Education</b><br>B.Tech Computer Engineering</div>
+</div>
+</section><!-- WORK --><section id="work">
+<h2>Work / Projects</h2>
+<div class="container">
+<div class="card">
+<h3>Binary to Decimal Converter</h3>
+<p>Built using programming logic to convert binary numbers.</p>
+</div>
+<div class="card">
+<h3>Datathon Project</h3>
+<p>Worked on real-world data analysis and visualization.</p>
+</div>
+</div><div class="container">
+<div class="card"><b>Accomplishments</b><br>Participated in Datathon</div>
+<div class="card"><b>Testimonials</b><br>"A passionate learner with strong communication skills"</div>
+</div>
+</section><!-- SKILLS --><section id="skills">
+<h2>Skills & Attributes</h2>
+<div class="container">
+<div class="card">HTML</div>
+<div class="card">CSS</div>
+<div class="card">JavaScript</div>
+<div class="card">Public Speaking</div>
+<div class="card">Creative Writing (Poems & Shayari)</div>
+<div class="card">Communication Skills</div>
+<div class="card">Problem Solving</div>
+</div>
+</section><!-- CONTACT --><section id="contact">
+<h2>Contact</h2>
+<p>📞 <a href="tel:+918261067789">+91 8261067789</a></p>
+<p>📧 <a href="mailto:sakshikhalage769@gmail.com@gmail.com">sakshikhalage769@gmail.com@gmail.com</a></p>
+<p>🔗 <a href="#">LinkedIn Profile</a></p>
+</section><footer>
+<p>© 2026 Sakshi | All Rights Reserved</p>
+</footer><script>
+ScrollReveal().reveal('section',{delay:200,distance:'50px',origin:'bottom'});
+function toggleDark(){document.body.classList.toggle('dark');}
+</script></body>
+</html>
